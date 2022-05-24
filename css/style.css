@@ -1,18 +1,31 @@
 body {
     background-color: #F3F5FC;
+    box-sizing: border-box;
 }
 
-.conteudo-centralizado {
+.conteudo {
     width: 1000px;
     margin: 0 auto 0 auto;
     background-color: lightblue;
+}
+
+.campos-texto {
+    display: block;
+    text-align: right;
+    background-color: aquamarine;
+}
+
+.botoes {
+    display: block;
+    text-align: center;
+    background-color: lightcoral;
 }
 
 .txtarea {
     resize: none;
     border-width: 0;
     border-radius: 12px;
-    padding: 10px;
+    padding: 15px;
 }
 
 .btn {
@@ -39,10 +52,16 @@ body {
     background-color: white;
     width: 15em;
     height: 35em;
+    margin: 20px;
     box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
 }
 
 .btn-descriptografar {
     background-color: #D8DFE8;
     color: #0A3871;
+}
+
+.rodape {
+    text-align: center;
+    margin: 30px 0;
 }

@@ -10,15 +10,19 @@
 </head>
 <body>
     <main>
-        <div class="conteudo-centralizado">
-            <textarea id="txt-descriptografado" class="txtarea" placeholder="Digite seu texto" maxlength="100"></textarea>
-            <textarea id="txt-criptografado" class="txtarea" placeholder="Resultado" readonly></textarea>
+        <div class="conteudo">
+            <div class="campos-texto">
+                <textarea id="txt-descriptografado" class="txtarea" placeholder="Digite seu texto" maxlength="255"></textarea>
+                <textarea id="txt-criptografado" class="txtarea" placeholder="Resultado" readonly></textarea>
+            </div>
             
-            <button class="btn btn-criptografar" type="button">Criptografar</button>
-            <button class="btn btn-descriptografar" type="button">Descriptografar</button>
+            <div class="botoes">
+                <button class="btn btn-criptografar" type="button">Criptografar</button>
+                <button class="btn btn-descriptografar" type="button">Descriptografar</button>
+            </div>
         </div>
     </main>
-    <footer class="conteudo-centralizado">
+    <footer class="rodape">
         <a>Gabriel Graciliano 2022</a>
     </footer>
 </body>
