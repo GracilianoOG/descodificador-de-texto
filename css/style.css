@@ -1,0 +1,48 @@
+body {
+    background-color: #F3F5FC;
+}
+
+.conteudo-centralizado {
+    width: 1000px;
+    margin: 0 auto 0 auto;
+    background-color: lightblue;
+}
+
+.txtarea {
+    resize: none;
+    border-width: 0;
+    border-radius: 12px;
+    padding: 10px;
+}
+
+.btn {
+    padding: 10px 40px;
+    border-color: #0A3871;
+    border-radius: 12px;
+    border-width: 1px;
+    width: 200px;
+    font-size: 0.8em;
+}
+
+.btn-criptografar {
+    background-color: #0A3871;
+    color: white;
+}
+
+#txt-descriptografado {
+    background-color: white;
+    width: 30em;
+    height: 25em;
+}
+
+#txt-criptografado {
+    background-color: white;
+    width: 15em;
+    height: 35em;
+    box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.btn-descriptografar {
+    background-color: #D8DFE8;
+    color: #0A3871;
+}

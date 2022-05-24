@@ -10,15 +10,16 @@
 </head>
 <body>
     <main>
-        <textarea class="txt-criptografar" placeholder="Digite seu texto"></textarea>
-
-        <button class="btn-criptografar">Criptografar</button>
-        <button class="btn-descriptografar">Descriptografar</button>
-        
-        <textarea class="txt-descriptografar" placeholder="Resultado"></textarea>
+        <div class="conteudo-centralizado">
+            <textarea id="txt-descriptografado" class="txtarea" placeholder="Digite seu texto" maxlength="100"></textarea>
+            <textarea id="txt-criptografado" class="txtarea" placeholder="Resultado" readonly></textarea>
+            
+            <button class="btn btn-criptografar" type="button">Criptografar</button>
+            <button class="btn btn-descriptografar" type="button">Descriptografar</button>
+        </div>
     </main>
-    <footer>
-        Gabriel Graciliano 2022
+    <footer class="conteudo-centralizado">
+        <a>Gabriel Graciliano 2022</a>
     </footer>
 </body>
 </html>
