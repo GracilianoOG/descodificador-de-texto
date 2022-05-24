@@ -29,12 +29,13 @@ body {
 }
 
 .btn {
-    padding: 10px 40px;
+    padding: 12px 40px;
     border-color: #0A3871;
     border-radius: 12px;
     border-width: 1px;
     width: 200px;
     font-size: 0.8em;
+    margin-left: 10px;
 }
 
 .btn-criptografar {
@@ -46,6 +47,7 @@ body {
     background-color: white;
     width: 30em;
     height: 25em;
+    margin-bottom: 20px;
 }
 
 #txt-criptografado {
