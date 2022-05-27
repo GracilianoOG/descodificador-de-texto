@@ -8,7 +8,7 @@ body {
     position: relative;
     width: 1000px;
     height: 600px;
-    margin: 0 auto;
+    margin: 60px auto 0 auto;
     background-color: lightblue;
 }
 
@@ -25,6 +25,7 @@ body {
 
 .campos {
     resize: none;
+    outline: none;
     border-width: 0;
     border-radius: 12px;
     padding: 15px;
