@@ -11,12 +11,12 @@ body {
     background-color: lightblue;
 }
 
-.campos-texto {
+.conteudo-campos {
     display: block;
     text-align: right;
 }
 
-.botoes {
+.conteudo-botoes {
     position: absolute;
     /*background-color: lightcoral;*/
     text-align: center;
@@ -24,7 +24,7 @@ body {
     left: 30%;
 }
 
-.txtarea {
+.campos {
     resize: none;
     border-width: 0;
     border-radius: 12px;
@@ -54,14 +54,14 @@ body {
     color: white;
 }
 
-#txt-input {
+#campo-input {
     display: block;
     background-color: white;
     width: 30em;
     height: 25em;
 }
 
-#txt-output {
+#campo-output {
     background-color: white;
     width: 15em;
     height: 35em;
