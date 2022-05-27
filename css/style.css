@@ -7,21 +7,20 @@ body {
 .conteudo {
     position: relative;
     width: 1000px;
-    margin: 0 auto 0 auto;
+    height: 600px;
+    margin: 0 auto;
     background-color: lightblue;
 }
 
 .conteudo-campos {
-    display: block;
-    text-align: right;
+    position: absolute;
+    right: 0;
 }
 
 .conteudo-botoes {
     position: absolute;
-    /*background-color: lightcoral;*/
-    text-align: center;
-    bottom: 30px;
-    left: 30%;
+    bottom: 75px;
+    left: 235px;
 }
 
 .campos {
@@ -36,7 +35,6 @@ body {
 
 .btn {
     padding: 12px 40px;
-    margin-top: 35px;
     border-color: #0A3871;
     border-radius: 12px;
     border-width: 1px;
@@ -45,27 +43,20 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-.btn:first-of-type {
-    margin-right: 10px;
-}
-
 .btn-criptografar {
     background-color: #0A3871;
     color: white;
+    margin-right: 20px;
 }
 
 #campo-input {
-    display: block;
     background-color: white;
-    width: 30em;
-    height: 25em;
+    margin: 0 20px 60px 0;
 }
 
 #campo-output {
     background-color: white;
-    width: 15em;
-    height: 35em;
-    margin: 20px;
+    margin: 30px 30px 0 0;
     box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
 }
 
