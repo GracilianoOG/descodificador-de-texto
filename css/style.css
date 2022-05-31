@@ -57,6 +57,35 @@ body {
     height: 570px;
 }
 
+.mensagens {
+    position: absolute;
+    right: 10px;
+    top: 150px;
+    width: 260px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.mensagens > a {
+    display: block;
+    margin-top: 25px;
+}
+
+.mensagens-principal {
+    font-size: 18px;
+    opacity: 0.75;
+}
+
+.mensagens-secundaria {
+    font-size: 12px;
+    opacity: 0.4;
+}
+
+.mensagens-img {
+    display: block;
+    width: 240px;
+}
+
 .btn {
     padding: 15px 0;
     border-color: #0A3871;
@@ -94,8 +123,11 @@ body {
 }
 
 .rodape {
-    background-color: #cdcfd6;
+    background-color: #F3F5FC;
+    background: linear-gradient(180deg, #F3F5FC, #cdcfd6);
     text-align: center;
     line-height: 80px;
+    font-size: 18px;
+    color: #081e3a;
     margin: 50px 0 0;
 }
