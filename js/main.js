@@ -7,26 +7,30 @@ var txtOutput = document.querySelector("#campo-output");
 btnCriptografia.addEventListener("click", criptografaTexto);
 btnDescriptografia.addEventListener("click", descriptografaTexto);
 
+function formataTexto(texto) {
+    return texto.trim().toLowerCase();
+}
+
 function criptografaTexto() {
-    var txtCriptografado = txtInput.value;
+    var txtCriptografado = formataTexto(txtInput.value);
 
-    txtCriptografado = txtCriptografado.replace(/e/g, "enter");
-    txtCriptografado = txtCriptografado.replace(/i/g, "imes");
-    txtCriptografado = txtCriptografado.replace(/a/g, "ai");
-    txtCriptografado = txtCriptografado.replace(/o/g, "ober");
-    txtCriptografado = txtCriptografado.replace(/u/g, "ufat");
+    txtCriptografado = txtCriptografado.replaceAll("e", "enter");
+    txtCriptografado = txtCriptografado.replaceAll("i", "imes");
+    txtCriptografado = txtCriptografado.replaceAll("a", "ai");
+    txtCriptografado = txtCriptografado.replaceAll("o", "ober");
+    txtCriptografado = txtCriptografado.replaceAll("u", "ufat");
 
-    txtOutput.value = txtCriptografado.trim();
+    txtOutput.value = txtCriptografado;
 }
 
 function descriptografaTexto() {
-    var txtDescriptografado = txtInput.value;
+    var txtDescriptografado = formataTexto(txtInput.value);
 
-    txtDescriptografado = txtDescriptografado.replace(/enter/g, "e");
-    txtDescriptografado = txtDescriptografado.replace(/imes/g, "i");
-    txtDescriptografado = txtDescriptografado.replace(/ai/g, "a");
-    txtDescriptografado = txtDescriptografado.replace(/ober/g, "o");
-    txtDescriptografado = txtDescriptografado.replace(/ufat/g, "u");
+    txtDescriptografado = txtDescriptografado.replaceAll("enter", "e");
+    txtDescriptografado = txtDescriptografado.replaceAll("imes", "i");
+    txtDescriptografado = txtDescriptografado.replaceAll("ai", "a");
+    txtDescriptografado = txtDescriptografado.replaceAll("ober", "o");
+    txtDescriptografado = txtDescriptografado.replaceAll("ufat", "u");
 
-    txtOutput.value = txtDescriptografado.trim();
+    txtOutput.value = txtDescriptografado;
 }
