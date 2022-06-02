@@ -94,11 +94,16 @@ body {
     width: 240px;
     font-size: 1em;
     font-family: 'Inter', sans-serif;
+    transition: transform 1s, color 150ms;
 }
 
 .btn:hover {
     transform: scale(1.1);
     cursor: pointer;
+}
+
+.btn:active {
+    color: #757FB2;
 }
 
 .btn-aviso {
@@ -112,21 +117,11 @@ body {
     background-color: #0A3871;
     color: white;
     margin-right: 20px;
-    transition: all 1s;
-}
-
-.btn-criptografar:hover {
-    background-color: #609ED4;
 }
 
 .btn-descriptografar {
     background-color: #D8DFE8;
     color: #0A3871;
-    transition: all 1s;
-}
-
-.btn-descriptografar:hover {
-    background-color: #609ED4;
 }
 
 .rodape {
