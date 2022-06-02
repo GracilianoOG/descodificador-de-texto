@@ -47,7 +47,7 @@ body {
     vertical-align: top;
     margin: 110px 40px 0 0;
     width: 480px;
-    height: 380px;
+    height: 360px;
 }
 
 #campo-output {
@@ -66,7 +66,7 @@ body {
     text-align: center;
 }
 
-.mensagens > a {
+.mensagens > p {
     display: block;
     margin-top: 25px;
 }
@@ -91,7 +91,7 @@ body {
     border-color: #0A3871;
     border-radius: 15px;
     border-width: 1px;
-    width: 220px;
+    width: 240px;
     font-size: 1em;
     font-family: 'Inter', sans-serif;
 }
@@ -99,6 +99,13 @@ body {
 .btn:hover {
     transform: scale(1.1);
     cursor: pointer;
+}
+
+.btn-aviso {
+    display: block;
+    opacity: 0.7;
+    font-size: 12px;
+    margin-bottom: 15px;
 }
 
 .btn-criptografar {
