@@ -1,5 +1,6 @@
 var btnCriptografia = document.querySelector(".btn-criptografar");
 var btnDescriptografia = document.querySelector(".btn-descriptografar");
+var mensagens = document.querySelector(".mensagens");
 
 var txtInput = document.querySelector("#campo-input");
 var txtOutput = document.querySelector("#campo-output");
@@ -9,6 +10,15 @@ btnDescriptografia.addEventListener("click", descriptografaTexto);
 
 function formataTexto(texto) {
     return texto.trim().toLowerCase();
+}
+
+function escondeMensagem(mensagem) {
+    if(txtOutput.value.length > 0) {
+        mensagem.style.visibility = "hidden";
+    } else {
+        mensagem.style.visibility = "visible";
+    }
+    console.log(txtOutput.value.length);
 }
 
 function criptografaTexto() {
@@ -21,6 +31,7 @@ function criptografaTexto() {
     txtCriptografado = txtCriptografado.replaceAll("u", "ufat");
 
     txtOutput.value = txtCriptografado;
+    escondeMensagem(mensagens);
 }
 
 function descriptografaTexto() {
