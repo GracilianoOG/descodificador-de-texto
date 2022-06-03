@@ -8,6 +8,13 @@ var txtOutput = document.querySelector("#campo-output");
 btnCriptografia.addEventListener("click", criptografaTexto);
 btnDescriptografia.addEventListener("click", descriptografaTexto);
 
+limpaTexto();
+
+function limpaTexto() {
+    txtInput.value = "";
+    txtOutput.value = "";
+}
+
 function formataTexto(texto) {
     return texto.trim().toLowerCase();
 }
@@ -44,4 +51,5 @@ function descriptografaTexto() {
     txtDescriptografado = txtDescriptografado.replaceAll("ufat", "u");
 
     txtOutput.value = txtDescriptografado;
+    escondeMensagem(mensagens);
 }
