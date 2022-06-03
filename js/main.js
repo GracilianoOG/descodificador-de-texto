@@ -19,13 +19,12 @@ function formataTexto(texto) {
     return texto.trim().toLowerCase();
 }
 
-function escondeMensagem(mensagem) {
+function escondeMensagem(mensagem, classe) {
     if(txtOutput.value.length > 0) {
-        mensagem.style.visibility = "hidden";
+        if(!mensagem.classList.contains(classe)) {mensagem.classList.add(classe);}
     } else {
-        mensagem.style.visibility = "visible";
+        if(mensagem.classList.contains(classe)) {mensagem.classList.remove(classe);}
     }
-    console.log(txtOutput.value.length);
 }
 
 function criptografaTexto() {
@@ -38,7 +37,7 @@ function criptografaTexto() {
     txtCriptografado = txtCriptografado.replaceAll("u", "ufat");
 
     txtOutput.value = txtCriptografado;
-    escondeMensagem(mensagens);
+    escondeMensagem(mensagens, "elemento-invisivel");
 }
 
 function descriptografaTexto() {
@@ -51,5 +50,5 @@ function descriptografaTexto() {
     txtDescriptografado = txtDescriptografado.replaceAll("ufat", "u");
 
     txtOutput.value = txtDescriptografado;
-    escondeMensagem(mensagens);
+    escondeMensagem(mensagens, "elemento-invisivel");
 }

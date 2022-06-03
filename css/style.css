@@ -86,6 +86,10 @@ body {
     width: 240px;
 }
 
+.elemento-invisivel {
+    visibility: hidden;
+}
+
 .btn {
     padding: 15px 0;
     border-color: #0A3871;
