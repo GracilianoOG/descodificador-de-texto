@@ -33,9 +33,11 @@ A descriptografia funciona de maneira semelhante, substituindo as partes criptog
 
 ## 📆 Possíveis atualizações futuras
 
-* Tornar o site responsivo, para diferentes plataformas;
+* Tornar o site responsivo para diferentes plataformas;
 * Organizar os arquivos e diretórios;
 * Melhorar o readme, adicionar imagens;
+* Melhorar o suporte para outros navegadores;
+  * Placeholder
 * Revisão geral do código.
 
 ## 📌 Mais informações
