@@ -98,7 +98,7 @@ body {
     width: 240px;
     font-size: 1em;
     font-family: 'Inter', sans-serif;
-    transition: transform 1s, color 150ms;
+    transition: transform 1s, color 50ms;
 }
 
 .btn:hover {
@@ -124,6 +124,12 @@ body {
 }
 
 .btn-descriptografar {
+    background-color: #D8DFE8;
+    color: #0A3871;
+    margin-right: 46px;
+}
+
+.btn-copiar {
     background-color: #D8DFE8;
     color: #0A3871;
 }
