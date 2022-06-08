@@ -1,5 +1,7 @@
 var btnCriptografia = document.querySelector(".btn-criptografar");
 var btnDescriptografia = document.querySelector(".btn-descriptografar");
+var btnCopia = document.querySelector(".btn-copiar");
+
 var mensagens = document.querySelector(".mensagens");
 
 var txtInput = document.querySelector("#campo-input");
@@ -7,6 +9,7 @@ var txtOutput = document.querySelector("#campo-output");
 
 btnCriptografia.addEventListener("click", criptografaTexto);
 btnDescriptografia.addEventListener("click", descriptografaTexto);
+btnCopia.addEventListener("click", copiaTexto);
 
 limpaTexto();
 
@@ -51,4 +54,10 @@ function descriptografaTexto() {
 
     txtOutput.value = txtDescriptografado;
     escondeMensagem(mensagens, "elemento-invisivel");
+}
+
+function copiaTexto() {
+    // txtOutput.select();
+    // document.execCommand("copy");
+    navigator.clipboard.writeText(txtOutput.value);
 }

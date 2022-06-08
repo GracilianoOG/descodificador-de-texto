@@ -1,4 +1,4 @@
-# Descodificador de texto
+# 🔐 Descodificador de texto
 
 ## 📖 Descrição
 
@@ -20,22 +20,26 @@ A descriptografia funciona de maneira semelhante, substituindo as partes criptog
 
 ## 🔨 Ferramentas utilizadas
 
-* Trello
+* **Trello**
   * Gerenciamento das etapas do projeto
-* Figma
+* **Figma**
   * Design conceitual do projeto
-* VSCode
+* **VSCode**
   * Desenvolvimento do código e organização dos arquivos
-* Git
+* **Git**
   * Versionamento do código
-* Github
+* **Github**
   * Hospedagem dos arquivos
 
 ## 📆 Possíveis atualizações futuras
 
-* Tornar o site responsivo
-* Revisão geral do código
+* Tornar o site responsivo, para diferentes plataformas;
+* Organizar os arquivos e diretórios;
+* Melhorar o readme, adicionar imagens;
+* Revisão geral do código.
 
 ## 📌 Mais informações
 
-Este projeto foi feito com base no Challenge da Alura, em parceria com a Oracle, do projeto Oracle Next Education.
+Este projeto foi feito com base no Challenge da Alura em parceria com a Oracle, do projeto Oracle Next Education.
+
+Toda e qualquer crítica será sempre bem-vinda!
