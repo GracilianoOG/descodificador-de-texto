@@ -36,6 +36,7 @@ A descriptografia funciona de maneira semelhante, substituindo as partes criptog
 * Tornar o site responsivo para diferentes plataformas;
 * Organizar os arquivos e diretórios;
 * Melhorar o readme, adicionar imagens;
+* Alterar o favicon;
 * Melhorar o suporte para outros navegadores;
   * Placeholder
 * Revisão geral do código.
