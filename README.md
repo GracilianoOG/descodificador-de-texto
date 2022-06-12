@@ -1,4 +1,4 @@
-# 🔐 Descodificador de texto
+# 🔐 Decodificador de texto
 
 ## 📖 Descrição
 
@@ -37,6 +37,7 @@ A descriptografia funciona de maneira semelhante, substituindo as partes criptog
 * Organizar os arquivos e diretórios;
 * Melhorar o readme, adicionar imagens;
 * Alterar o favicon;
+* Melhorar a usabilidade;
 * Melhorar o suporte para outros navegadores;
   * Placeholder
 * Revisão geral do código.
