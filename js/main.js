@@ -1,63 +1,32 @@
-var btnCriptografia = document.querySelector(".btn-criptografar");
-var btnDescriptografia = document.querySelector(".btn-descriptografar");
-var btnCopia = document.querySelector(".btn-copiar");
+import { encrypt } from "./encrypt.js";
+import { decrypt } from "./decrypt.js";
+import { auxiliary } from "./auxiliary.js";
 
-var mensagens = document.querySelector(".mensagens");
+const btnEncrypt = document.querySelector(".btn-encrypt");
+const btnDecrypt = document.querySelector(".btn-decrypt");
+const btnCopy = document.querySelector(".btn-copy");
 
-var txtInput = document.querySelector("#campo-input");
-var txtOutput = document.querySelector("#campo-output");
+const messageContainer = document.querySelector(".message");
+const txtOutputContainer = document.querySelector(".message-result");
 
-btnCriptografia.addEventListener("click", criptografaTexto);
-btnDescriptografia.addEventListener("click", descriptografaTexto);
-btnCopia.addEventListener("click", copiaTexto);
+const txtInput = document.querySelector("#message-input");
+const txtOutput = document.querySelector("#message-output");
 
-limpaTexto();
+btnEncrypt.addEventListener("click", () => { encrypt.encryptText(txtInput, txtOutput, encrypt.encryption) });
+btnDecrypt.addEventListener("click", () => { decrypt.decryptText(txtInput, txtOutput, decrypt.decryption) });
+btnCopy.addEventListener("click", () => { auxiliary.copyTextToClipboard(txtOutput.value) });
 
-function limpaTexto() {
+txtInput.addEventListener("focus", () => {
+    if(txtOutput.value.length > 0) {
+        auxiliary.hideElement(messageContainer);
+        auxiliary.showElement(txtOutputContainer);
+        return;
+    }
+    auxiliary.showElement(messageContainer);
+    auxiliary.hideElement(txtOutputContainer);
+});
+
+(() => {
     txtInput.value = "";
     txtOutput.value = "";
-}
-
-function formataTexto(texto) {
-    return texto.trim().toLowerCase();
-}
-
-function escondeMensagem(mensagem, classe) {
-    if(txtOutput.value.length > 0) {
-        if(!mensagem.classList.contains(classe)) {mensagem.classList.add(classe);}
-    } else {
-        if(mensagem.classList.contains(classe)) {mensagem.classList.remove(classe);}
-    }
-}
-
-function criptografaTexto() {
-    var txtCriptografado = formataTexto(txtInput.value);
-
-    txtCriptografado = txtCriptografado.replaceAll("e", "enter");
-    txtCriptografado = txtCriptografado.replaceAll("i", "imes");
-    txtCriptografado = txtCriptografado.replaceAll("a", "ai");
-    txtCriptografado = txtCriptografado.replaceAll("o", "ober");
-    txtCriptografado = txtCriptografado.replaceAll("u", "ufat");
-
-    txtOutput.value = txtCriptografado;
-    escondeMensagem(mensagens, "elemento-invisivel");
-}
-
-function descriptografaTexto() {
-    var txtDescriptografado = formataTexto(txtInput.value);
-
-    txtDescriptografado = txtDescriptografado.replaceAll("enter", "e");
-    txtDescriptografado = txtDescriptografado.replaceAll("imes", "i");
-    txtDescriptografado = txtDescriptografado.replaceAll("ai", "a");
-    txtDescriptografado = txtDescriptografado.replaceAll("ober", "o");
-    txtDescriptografado = txtDescriptografado.replaceAll("ufat", "u");
-
-    txtOutput.value = txtDescriptografado;
-    escondeMensagem(mensagens, "elemento-invisivel");
-}
-
-function copiaTexto() {
-    // txtOutput.select();
-    // document.execCommand("copy");
-    navigator.clipboard.writeText(txtOutput.value);
-}
+})();
