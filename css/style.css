@@ -99,6 +99,7 @@
     font-weight: 400;
     font-size: 1rem;
     padding: 1.25rem 0;
+    transition: background-color 300ms;
     width: 100%;
 }
 
@@ -108,10 +109,20 @@
     color: #FFF;
 }
 
+.btn-encrypt:hover {
+    background-color: #FFF;
+    color: #0A3871;
+}
+
 .btn-decrypt {
     border: 1px solid #0A3871;
     background-color: #D8DFE8;
     color: #0A3871;
+}
+
+.btn-decrypt:hover {
+    background-color: #072B61;
+    color: #FFF;
 }
 
 .message-result {
@@ -135,6 +146,11 @@
     border: 1px solid #0A3871;
     color: #0A3871;
     width: 100%;
+}
+
+.btn-copy:hover {
+    background-color: #072B61;
+    color: #FFF;
 }
 
 .invisible {
