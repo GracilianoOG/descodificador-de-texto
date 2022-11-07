@@ -53,10 +53,6 @@ body {
     display: none;
 }
 
-.message__text {
-    max-width: 300px;
-}
-
 .message__title {
     color: #343A40;
     font-weight: 700;
@@ -181,6 +177,11 @@ body {
         display: initial;
         margin-bottom: 1rem;
         width: 100%;
+    }
+
+    .message__text {
+        margin: 0 auto;
+        max-width: 300px;
     }
 
     .message-input {
