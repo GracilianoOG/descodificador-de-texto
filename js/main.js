@@ -16,6 +16,15 @@ btnEncrypt.addEventListener("click", () => { encrypt.encryptText(txtInput, txtOu
 btnDecrypt.addEventListener("click", () => { decrypt.decryptText(txtInput, txtOutput, decrypt.decryption) });
 btnCopy.addEventListener("click", () => { auxiliary.copyTextToClipboard(txtOutput.value) });
 
+btnCopy.addEventListener("click", () => {
+    btnCopy.textContent = "Copiado";
+    btnCopy.animate([
+        { borderColor: "green", color: "green", offset: 0 },
+        { borderColor: "#0A3871", color: "transparent", offset: 0.75 }
+    ], 1800);
+    setTimeout(() => { btnCopy.textContent = "Copiar" }, 1200);
+});
+
 txtInput.addEventListener("focus", () => {
     if(txtOutput.value.length > 0) {
         auxiliary.hideElement(messageContainer);
