@@ -19,8 +19,8 @@ btnCopy.addEventListener("click", () => { auxiliary.copyTextToClipboard(txtOutpu
 btnCopy.addEventListener("click", () => {
     btnCopy.textContent = "Copiado";
     btnCopy.animate([
-        { borderColor: "green", color: "green", offset: 0 },
-        { borderColor: "#0A3871", color: "transparent", offset: 0.75 }
+        { borderColor: "green", color: "green", pointerEvents: "none", offset: 0 },
+        { color: "transparent", offset: 0.75 }
     ], 1800);
     setTimeout(() => { btnCopy.textContent = "Copiar" }, 1200);
 });
