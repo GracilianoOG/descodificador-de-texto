@@ -20,7 +20,7 @@ btnCopy.addEventListener("click", () => {
     btnCopy.textContent = "Copiado";
     btnCopy.animate([
         { borderColor: "green", color: "green", pointerEvents: "none", offset: 0 },
-        { color: "transparent", offset: 0.75 }
+        { color: "transparent", pointerEvents: "none", offset: 0.75 }
     ], 1800);
     setTimeout(() => { btnCopy.textContent = "Copiar" }, 1200);
 });
