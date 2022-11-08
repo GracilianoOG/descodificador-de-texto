@@ -65,6 +65,6 @@ Toda e qualquer crítica será sempre bem-vinda!
 * [🔍 Oracle Next Education](https://www.oracle.com/br/education/oracle-next-education/)
 * [🔍 Projeto | Figma](https://www.figma.com/file/QyfH9nA4OJwHQJeiidhHzV/Alura-Challenge---Desafio-1---L%C3%B3gica---Pessoal?node-id=0%3A1)
 * [🔍 Javascript Events | W3Schools](https://www.w3schools.com/jsref/dom_obj_event.asp)
-* [🔍 setInterval | MDN](https://developer.mozilla.org/en-US/docs/Web/API/setTimeout)
+* [🔍 setTimeout | MDN](https://developer.mozilla.org/en-US/docs/Web/API/setTimeout)
 * [🔍 animate | MDN](https://developer.mozilla.org/en-US/docs/Web/API/Element/animate)
 * [🔍 Keyframe Formats | MDN](https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API/Keyframe_Formats)
