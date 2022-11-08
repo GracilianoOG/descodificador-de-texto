@@ -7,7 +7,6 @@ function decryptText(input, output, decryption) {
 
     for(let code of decryption) { text = text.replaceAll(code[0], code[1]); }
     output.value = text;
-    input.focus();
 }
 
 export const decrypt = {

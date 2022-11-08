@@ -7,7 +7,6 @@ function encryptText(input, output, encryption) {
 
     for(let code of encryption) { text = text.replaceAll(code[0], code[1]); }
     output.value = text;
-    input.focus();
 }
 
 export const encrypt = {
