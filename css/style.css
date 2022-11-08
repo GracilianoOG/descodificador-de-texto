@@ -115,8 +115,7 @@
 }
 
 .btn-encrypt:hover {
-    background-color: #FFF;
-    color: #0A3871;
+    background-color: #072B61;
 }
 
 .btn-decrypt {
@@ -126,8 +125,7 @@
 }
 
 .btn-decrypt:hover {
-    background-color: #072B61;
-    color: #FFF;
+    background-color: #FFF;
 }
 
 .message-result {
@@ -154,8 +152,7 @@
 }
 
 .btn-copy:hover {
-    background-color: #072B61;
-    color: #FFF;
+    background-color: #D8DFE8;
 }
 
 .invisible {
