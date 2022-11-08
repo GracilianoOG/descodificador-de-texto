@@ -12,20 +12,19 @@ const txtOutputContainer = document.querySelector(".message-result");
 const txtInput = document.querySelector("#message-input");
 const txtOutput = document.querySelector("#message-output");
 
-btnEncrypt.addEventListener("click", () => { encrypt.encryptText(txtInput, txtOutput, encrypt.encryption) });
-btnDecrypt.addEventListener("click", () => { decrypt.decryptText(txtInput, txtOutput, decrypt.decryption) });
-btnCopy.addEventListener("click", () => { auxiliary.copyTextToClipboard(txtOutput.value) });
+btnEncrypt.addEventListener("click", () => {
+    encrypt.encryptText(txtInput, txtOutput, encrypt.encryption);
+    auxiliary.outputMessage(txtInput, { message: messageContainer, output: txtOutputContainer });
+});
 
-btnCopy.addEventListener("click", () => { auxiliary.animateButtonState(btnCopy, "Copiado") });
+btnDecrypt.addEventListener("click", () => {
+    decrypt.decryptText(txtInput, txtOutput, decrypt.decryption);
+    auxiliary.outputMessage(txtInput, { message: messageContainer, output: txtOutputContainer });
+});
 
-txtInput.addEventListener("focus", () => {
-    if(txtOutput.value.length > 0) {
-        auxiliary.hideElement(messageContainer);
-        auxiliary.showElement(txtOutputContainer);
-        return;
-    }
-    auxiliary.showElement(messageContainer);
-    auxiliary.hideElement(txtOutputContainer);
+btnCopy.addEventListener("click", () => {
+    auxiliary.copyTextToClipboard(txtOutput.value);
+    auxiliary.animateButtonState(btnCopy, "Copiado");
 });
 
 (() => {
