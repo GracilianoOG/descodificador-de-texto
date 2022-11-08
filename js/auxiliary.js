@@ -16,10 +16,21 @@ function animateButtonState(button, newText) {
     setTimeout(() => { button.textContent = defaultText }, 1200);
 }
 
+function outputMessage(input, containers) {
+    if(input.value.length > 0) {
+        hideElement(containers.message);
+        showElement(containers.output);
+        return;
+    }
+    showElement(containers.message);
+    hideElement(containers.output);
+}
+
 export const auxiliary = {
     formatText,
     copyTextToClipboard,
     hideElement,
     showElement,
-    animateButtonState
+    animateButtonState,
+    outputMessage
 }
