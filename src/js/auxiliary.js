@@ -20,8 +20,8 @@ function animateButtonState(button, newText) {
   button.animate(
     [
       {
-        borderColor: "green",
-        color: "green",
+        borderColor: "var(--copy-btn-copied-col)",
+        color: "var(--copy-btn-copied-col)",
         pointerEvents: "none",
         offset: 0,
       },
