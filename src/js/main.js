@@ -7,6 +7,7 @@ const btnEncrypt = document.querySelector(".btn-encrypt");
 const btnDecrypt = document.querySelector(".btn-decrypt");
 const btnCopy = document.querySelector(".btn-copy");
 const switcher = document.querySelector("#theme-switcher");
+const ariaRegion = document.querySelector("#aria-region");
 
 const messageContainer = document.querySelector(".message");
 const txtOutputContainer = document.querySelector(".message-result");
@@ -19,6 +20,7 @@ btnEncrypt.addEventListener("click", () => {
   auxiliary.outputMessage(txtInput, {
     message: messageContainer,
     output: txtOutputContainer,
+    error: ariaRegion,
   });
 });
 
@@ -27,6 +29,7 @@ btnDecrypt.addEventListener("click", () => {
   auxiliary.outputMessage(txtInput, {
     message: messageContainer,
     output: txtOutputContainer,
+    error: ariaRegion,
   });
 });
 
