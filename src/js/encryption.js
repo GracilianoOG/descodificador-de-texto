@@ -19,6 +19,8 @@ export const DECRYPTION = Object.freeze([
 function applyAlgorithm(input, output, algorithm) {
   let text = auxiliary.formatText(input.value);
 
+  if (!text.length) return;
+
   for (let code of algorithm) {
     text = text.replaceAll(code[0], code[1]);
   }
