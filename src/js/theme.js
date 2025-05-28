@@ -10,6 +10,10 @@ export function changeTheme() {
   localStorage.setItem("theme", nextTheme);
 }
 
+export function getCurrentTheme() {
+  return root.dataset.theme;
+}
+
 function checkTheme() {
   const storedTheme = localStorage.getItem("theme");
   if (storedTheme) return storedTheme;
