@@ -270,6 +270,7 @@
 
   .message__img {
     animation: float 2s infinite alternate ease-in-out;
+    border-radius: 50%;
     display: initial;
     margin-bottom: 1rem;
     width: 100%;
