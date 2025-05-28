@@ -89,9 +89,11 @@
 .message-input {
   background-color: transparent;
   border: none;
+  border-radius: 1rem;
   color: var(--input-col);
   font-size: 2rem;
   height: 100%;
+  padding: 1rem;
   width: 100%;
 }
 
