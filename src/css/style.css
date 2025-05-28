@@ -150,7 +150,7 @@
 }
 
 .message-output {
-  background-color: var(--output-bg-col);
+  background-color: transparent;
   border: none;
   border-radius: 1rem;
   color: var(--output-col);
