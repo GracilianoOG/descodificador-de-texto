@@ -1,10 +1,12 @@
 import { encrypt } from "./encrypt.js";
 import { decrypt } from "./decrypt.js";
 import { auxiliary } from "./auxiliary.js";
+import { changeTheme } from "./theme.js";
 
 const btnEncrypt = document.querySelector(".btn-encrypt");
 const btnDecrypt = document.querySelector(".btn-decrypt");
 const btnCopy = document.querySelector(".btn-copy");
+const switcher = document.querySelector("#theme-switcher");
 
 const messageContainer = document.querySelector(".message");
 const txtOutputContainer = document.querySelector(".message-result");
@@ -32,6 +34,8 @@ btnCopy.addEventListener("click", () => {
   auxiliary.copyTextToClipboard(txtOutput.value);
   auxiliary.animateButtonState(btnCopy, "Copiado");
 });
+
+switcher.addEventListener("click", changeTheme);
 
 (() => {
   txtInput.value = "";
