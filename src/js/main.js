@@ -43,7 +43,7 @@ btnDecrypt.addEventListener("click", () => {
 
 btnCopy.addEventListener("click", () => {
   auxiliary.copyTextToClipboard(txtOutput.value);
-  auxiliary.animateButtonState(btnCopy, "Copiado");
+  auxiliary.animateButtonState(btnCopy, "Copiar", "Copiado");
 });
 
 switcher.addEventListener("click", () => {
