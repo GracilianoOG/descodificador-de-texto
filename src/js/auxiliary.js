@@ -14,8 +14,7 @@ function showElement(element) {
   element.classList.remove("invisible");
 }
 
-function animateButtonState(button, newText) {
-  const defaultText = button.textContent;
+function animateButtonState(button, oldText, newText) {
   button.textContent = newText;
   button.animate(
     [
@@ -30,7 +29,7 @@ function animateButtonState(button, newText) {
     1800
   );
   setTimeout(() => {
-    button.textContent = defaultText;
+    button.textContent = oldText;
   }, 1200);
 }
 
