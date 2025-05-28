@@ -42,6 +42,7 @@ function outputMessage(input, containers) {
   }
   showElement(containers.message);
   hideElement(containers.output);
+  containers.error.textContent = "Nenhuma mensagem encontrada!";
 }
 
 export const auxiliary = {
