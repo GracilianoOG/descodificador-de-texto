@@ -34,15 +34,17 @@ function animateButtonState(button, newText) {
   }, 1200);
 }
 
-function outputMessage(input, containers) {
-  if (input.value.length > 0) {
-    hideElement(containers.message);
-    showElement(containers.output);
+function outputMessage(input, elements) {
+  const { message, output, error } = elements;
+
+  if (input.value.length) {
+    hideElement(message);
+    showElement(output);
     return;
   }
-  showElement(containers.message);
-  hideElement(containers.output);
-  containers.error.textContent = "Nenhuma mensagem encontrada!";
+  showElement(message);
+  hideElement(output);
+  error.textContent = "Nenhuma mensagem encontrada!";
 }
 
 export const auxiliary = {
