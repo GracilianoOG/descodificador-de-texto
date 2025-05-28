@@ -190,6 +190,16 @@
   display: block;
 }
 
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
 @media screen and (min-width: 576px) {
   .header {
     margin-bottom: 4rem;
@@ -259,6 +269,7 @@
   }
 
   .message__img {
+    animation: float 2s infinite alternate ease-in-out;
     display: initial;
     margin-bottom: 1rem;
     width: 100%;
