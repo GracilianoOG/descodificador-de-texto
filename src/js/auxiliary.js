@@ -1,5 +1,8 @@
 function formatText(text) {
-  return text.trim().toLowerCase();
+  return text
+    .replace(/[^a-zA-Z\s]/g, "")
+    .toLowerCase()
+    .trim();
 }
 
 function copyTextToClipboard(text) {
