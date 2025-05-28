@@ -37,3 +37,33 @@
 body {
   background-color: var(--body-bg-col);
 }
+
+[data-theme="dark"] {
+  --body-bg-col: #0e0e16;
+  --input-placeholder-col: rgba(47, 123, 217, 0.5);
+  --input-col: #3690ff;
+  --msg-warning-col: #a8b7c7;
+  --logo-filter: brightness(2);
+  --switcher-filter: invert(1);
+
+  --output-col: #fff;
+  --output-bg-col: #171725;
+  --output-box-shadow: 0 0 2px #fff;
+  --output--title-col: #dbedff;
+  --output--desc-col: #aabcce;
+
+  --encripy-btn-border-col: #fff;
+  --encripy-btn-bg-col: #fff;
+  --encripy-btn-col: #0a3871;
+  --encripy-btn-hover-col: #d8dfe8;
+
+  --decrypt-btn-border-col: #fff;
+  --decrypt-btn-bg-col: #171725;
+  --decrypt-btn-col: #fff;
+  --decrypt-btn-hover-col: #29293e;
+
+  --copy-btn-border-col: #fff;
+  --copy-btn-bg-col: #171725;
+  --copy-btn-col: #fff;
+  --copy-btn-hover-col: #12121e;
+}
