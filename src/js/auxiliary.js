@@ -35,16 +35,16 @@ function animateButtonState(button, newText) {
 }
 
 function outputMessage(input, elements) {
-  const { message, output, error } = elements;
+  const { message, output } = elements;
 
   if (input.value.length) {
     hideElement(message);
     showElement(output);
-    return;
+    return true;
   }
   showElement(message);
   hideElement(output);
-  error.textContent = "Nenhuma mensagem encontrada!";
+  return false;
 }
 
 export const auxiliary = {
