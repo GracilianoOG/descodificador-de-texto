@@ -1,5 +1,5 @@
 import { encryptText } from "./encrypt.js";
-import { decrypt } from "./decrypt.js";
+import { decryptText } from "./decrypt.js";
 import { auxiliary } from "./auxiliary.js";
 import { changeTheme, getCurrentTheme } from "./theme.js";
 
@@ -29,7 +29,7 @@ btnEncrypt.addEventListener("click", () => {
 });
 
 btnDecrypt.addEventListener("click", () => {
-  decrypt.decryptText(txtInput, txtOutput, decrypt.decryption);
+  decryptText(txtInput, txtOutput);
   const validity = auxiliary.outputMessage(txtInput, {
     message: messageContainer,
     output: txtOutputContainer,
