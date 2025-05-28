@@ -189,6 +189,16 @@
   display: block;
 }
 
+@keyframes focus {
+  0% {
+    outline-offset: 0px;
+  }
+
+  100% {
+    outline-offset: 4px;
+  }
+}
+
 @keyframes float {
   0% {
     transform: translateY(0px);
