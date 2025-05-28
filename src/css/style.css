@@ -134,6 +134,7 @@
 }
 
 .message-output {
+  background-color: var(--output-bg-col);
   border: none;
   color: var(--output-col);
   font-size: 2rem;
