@@ -1,19 +1,19 @@
-::-webkit-input-placeholder { 
-    color: rgba(10, 56, 113, .5);
+::-webkit-input-placeholder {
+  color: var(--input-placeholder-col);
 }
 
 ::-moz-placeholder {
-    color: rgba(10, 56, 113, .5);
+  color: var(--input-placeholder-col);
 }
 
 :-ms-input-placeholder {
-    color: rgba(10, 56, 113, .5);
+  color: var(--input-placeholder-col);
 }
 
 :-moz-placeholder {
-    color: rgba(10, 56, 113, .5);
+  color: var(--input-placeholder-col);
 }
 
 ::placeholder {
-    color: rgba(10, 56, 113, .5);
+  color: var(--input-placeholder-col);
 }
