@@ -1,243 +1,243 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap");
 @import url("./reset.css");
 @import url("./base.css");
 @import url("./placeholder.css");
 
 .container {
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  padding: 1rem;
 }
 
 .container__logo {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .logo {
-    width: 1.5rem;
+  width: 1.5rem;
 }
 
 .container__left {
-    height: 100%;
-    width: 100%;
+  height: 100%;
+  width: 100%;
 }
 
 .container__right {
-    align-items: center;
-    background-color: #FFF;
-    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-    border-radius: 2rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 2rem;
-    padding: 1rem;
-    width: 100%;
+  align-items: center;
+  background-color: var(--output-bg-col);
+  box-shadow: var(--output-box-shadow);
+  border-radius: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  width: 100%;
 }
 
 .message-encrypt {
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
-    justify-content: flex-end;
-    height: 100%;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  justify-content: flex-end;
+  height: 100%;
+  width: 100%;
 }
 
 .message {
-    width: 100%;
+  width: 100%;
 }
 
 .message__img {
-    display: none;
+  display: none;
 }
 
 .message__title {
-    color: #343A40;
-    font-weight: 700;
-    font-size: 1.25rem;
-    line-height: 1.6rem;
-    margin-bottom: 1rem;
-    text-align: center;
+  color: var(--output--title-col);
+  font-weight: 700;
+  font-size: 1.25rem;
+  line-height: 1.6rem;
+  margin-bottom: 1rem;
+  text-align: center;
 }
 
 .message__description {
-    color: #495057;
-    font-weight: 400;
-    font-size: .75rem;
-    line-height: 1.25rem;
-    text-align: center;
+  color: var(--output--desc-col);
+  font-weight: 400;
+  font-size: 0.75rem;
+  line-height: 1.25rem;
+  text-align: center;
 }
 
 .message-field {
-    resize: none;
-    outline: none;
+  resize: none;
+  outline: none;
 }
 
 .message-input {
-    background-color: transparent;
-    border: none;
-    color: #0A3871;
-    font-size: 2rem;
-    height: 100%;
-    width: 100%;
+  background-color: transparent;
+  border: none;
+  color: var(--input-col);
+  font-size: 2rem;
+  height: 100%;
+  width: 100%;
 }
 
 .message-warning {
-    background: url("../img/warning.png") no-repeat;
-    color: #495057;
-    font-size: .75rem;
-    font-weight: 400;
-    padding: .125rem 0 .125rem 1.5rem;
+  background: url("../img/warning.png") no-repeat;
+  color: var(--msg-warning-col);
+  font-size: 0.75rem;
+  font-weight: 400;
+  padding: 0.125rem 0 0.125rem 1.5rem;
 }
 
 .buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
 }
 
 .btn {
-    border-radius: 1.5rem;
-    cursor: pointer;
-    font-weight: 400;
-    font-size: 1rem;
-    padding: 1rem 0;
-    transition: background-color 300ms;
-    width: 100%;
+  border-radius: 1.5rem;
+  cursor: pointer;
+  font-weight: 400;
+  font-size: 1rem;
+  padding: 1rem 0;
+  transition: background-color 300ms;
+  width: 100%;
 }
 
 .btn-encrypt {
-    border: 1px solid #0A3871;
-    background-color: #0A3871;
-    color: #FFF;
+  border: 1px solid var(--encripy-btn-border-col);
+  background-color: var(--encripy-btn-bg-col);
+  color: var(--encripy-btn-col);
 }
 
 .btn-encrypt:hover {
-    background-color: #072B61;
+  background-color: var(--encripy-btn-hover-col);
 }
 
 .btn-decrypt {
-    border: 1px solid #0A3871;
-    background-color: #D8DFE8;
-    color: #0A3871;
+  border: 1px solid var(--decrypt-btn-border-col);
+  background-color: var(--decrypt-btn-bg-col);
+  color: var(--decrypt-btn-col);
 }
 
 .btn-decrypt:hover {
-    background-color: #FFF;
+  background-color: var(--decrypt-btn-hover-col);
 }
 
 .message-result {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
-    width: 100%;
-    height: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  height: 100%;
 }
 
 .message-output {
-    border: none;
-    color: #495057;
-    font-size: 2rem;
-    height: 100%;
-    width: 100%;
+  border: none;
+  color: var(--output-col);
+  font-size: 2rem;
+  height: 100%;
+  width: 100%;
 }
 
 .btn-copy {
-    background-color: #FFF;
-    border: 1px solid #0A3871;
-    color: #0A3871;
-    width: 100%;
+  border: 1px solid var(--copy-btn-border-col);
+  background-color: var(--copy-btn-bg-col);
+  color: var(--copy-btn-col);
+  width: 100%;
 }
 
 .btn-copy:hover {
-    background-color: #D8DFE8;
+  background-color: var(--copy-btn-hover-col);
 }
 
 .invisible {
-    display: none;
+  display: none;
 }
 
 @media screen and (min-width: 576px) {
-    .container__logo {
-        margin-bottom: 4rem;
-    }
+  .container__logo {
+    margin-bottom: 4rem;
+  }
 
-    .logo {
-        width: auto;
-    }
+  .logo {
+    width: auto;
+  }
 
-    .container__right {
-        margin-top: 3.5rem;
-    }
+  .container__right {
+    margin-top: 3.5rem;
+  }
 
-    .message__title {
-        font-size: 1.5rem;
-        line-height: 1.8rem;
-        margin-bottom: 1rem;
-    }
-    
-    .message__description {
-        font-size: 1rem;
-        line-height: 1.5rem;
-    }
+  .message__title {
+    font-size: 1.5rem;
+    line-height: 1.8rem;
+    margin-bottom: 1rem;
+  }
 
-    .btn {
-        padding: 1.25rem 0;;
-    }
+  .message__description {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .btn {
+    padding: 1.25rem 0;
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .buttons {
-        gap: 1.5rem;
-        flex-direction: row;
-    }
+  .buttons {
+    gap: 1.5rem;
+    flex-direction: row;
+  }
 }
 
 @media screen and (min-width: 992px) {
-    .container {
-        flex-direction: row;
-        padding: 2rem;
-    }
+  .container {
+    flex-direction: row;
+    padding: 2rem;
+  }
 
-    .logo {
-        padding: 0 50px;
-    }
+  .logo {
+    padding: 0 50px;
+  }
 
-    .container__left {
-        height: auto;
-        width: 70%;
-    }
+  .container__left {
+    height: auto;
+    width: 70%;
+  }
 
-    .container__right {
-        margin-top: 0;
-        width: 30%;
-    }
+  .container__right {
+    margin-top: 0;
+    width: 30%;
+  }
 
-    .message-encrypt {
-        margin: 0 auto;
-        max-width: 800px;
-        padding-bottom: 1rem;
-        width: 90%;
-    }
+  .message-encrypt {
+    margin: 0 auto;
+    max-width: 800px;
+    padding-bottom: 1rem;
+    width: 90%;
+  }
 
-    .message__img {
-        display: initial;
-        margin-bottom: 1rem;
-        width: 100%;
-    }
+  .message__img {
+    display: initial;
+    margin-bottom: 1rem;
+    width: 100%;
+  }
 
-    .message__text {
-        margin: 0 auto;
-        max-width: 300px;
-    }
+  .message__text {
+    margin: 0 auto;
+    max-width: 300px;
+  }
 
-    .message-input {
-        height: 70%;
-    }
+  .message-input {
+    height: 70%;
+  }
 
-    .btn:not(.btn-copy) {
-        width: 50%;
-    }
+  .btn:not(.btn-copy) {
+    width: 50%;
+  }
 }
