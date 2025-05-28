@@ -1,8 +1,37 @@
+:root {
+  --body-bg-col: #f3f5fc;
+  --input-placeholder-col: rgba(10, 56, 113, 0.5);
+
+  --output-bg-col: #fff;
+  --output-box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+  --output--title-col: #343a40;
+  --output--desc-col: #495057;
+  --output-col: #495057;
+
+  --input-col: #0a3871;
+  --msg-warning-col: #495057;
+
+  --encripy-btn-border-col: #0a3871;
+  --encripy-btn-bg-col: #0a3871;
+  --encripy-btn-col: #fff;
+  --encripy-btn-hover-col: #072b61;
+
+  --decrypt-btn-border-col: #0a3871;
+  --decrypt-btn-bg-col: #d8dfe8;
+  --decrypt-btn-col: #0a3871;
+  --decrypt-btn-hover-col: #fff;
+
+  --copy-btn-border-col: #fff;
+  --copy-btn-bg-col: #0a3871;
+  --copy-btn-col: #0a3871;
+  --copy-btn-hover-col: #d8dfe8;
+}
+
 * {
-    box-sizing: border-box;
-    font-family: Inter, sans-serif;
+  box-sizing: border-box;
+  font-family: Inter, sans-serif;
 }
 
 body {
-    background-color: #F3F5FC;
+  background-color: var(--body-bg-col);
 }
