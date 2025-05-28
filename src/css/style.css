@@ -82,7 +82,7 @@
 }
 
 .message-warning {
-  background: url("../img/warning.png") no-repeat;
+  background: url("../../img/warning.png") no-repeat;
   color: var(--msg-warning-col);
   font-size: 0.75rem;
   font-weight: 400;
