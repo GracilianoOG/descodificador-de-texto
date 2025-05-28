@@ -1,52 +1,88 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="img/favicon.ico" />
 
     <title>Decodificador de texto</title>
-</head>
-<body>
+  </head>
+  <body>
     <main>
-        <div class="container">
-            <!-- Parte da logo -->
-            <header>
-                <div class="container__logo">
-                    <img class="logo" src="img/logo.png" alt="Logo da Página">
-                </div>
-            </header>
-            <!-- Parte da esquerda -->
-            <div class="container__left">
-                <div class="message-encrypt">
-                    <textarea id="message-input" class="message-field message-input" placeholder="Digite seu texto" maxlength="255" spellcheck="false"></textarea>
-                    <p class="message-warning">Apenas letras minúsculas e sem acento.</p>
-                    <div class="buttons">
-                        <button class="btn btn-encrypt" type="button" title="Criptografar texto">Criptografar</button>
-                        <button class="btn btn-decrypt" type="button" title="Descriptografar texto">Descriptografar</button>
-                    </div>
-                </div>
+      <div class="container">
+        <!-- Parte da logo -->
+        <header>
+          <div class="container__logo">
+            <img class="logo" src="img/logo.png" alt="Logo da Página" />
+          </div>
+        </header>
+        <!-- Parte da esquerda -->
+        <div class="container__left">
+          <div class="message-encrypt">
+            <textarea
+              id="message-input"
+              class="message-field message-input"
+              placeholder="Digite seu texto"
+              maxlength="255"
+              spellcheck="false"
+            ></textarea>
+            <p class="message-warning">
+              Apenas letras minúsculas e sem acento.
+            </p>
+            <div class="buttons">
+              <button
+                class="btn btn-encrypt"
+                type="button"
+                title="Criptografar texto"
+              >
+                Criptografar
+              </button>
+              <button
+                class="btn btn-decrypt"
+                type="button"
+                title="Descriptografar texto"
+              >
+                Descriptografar
+              </button>
             </div>
-            <!-- Parte da direita -->
-            <div class="container__right">
-                <div class="message">
-                    <img class="message__img" src="img/sem-mensagens.svg" alt="Mensagens não encontradas">
-                    <div class="message__text">
-                        <p class="message__title">Nenhuma mensagem encontrada</p>
-                        <p class="message__description">Digite um texto que você deseja criptografar ou descriptografar</p>
-                    </div>
-                </div>
-                <div class="message-result invisible">
-                    <textarea id="message-output" class="message-field message-output" readonly></textarea>
-                    <button class="btn btn-copy" type="button" title="Copiar texto para área de transferência">Copiar</button>
-                </div>
-            </div>
+          </div>
         </div>
+        <!-- Parte da direita -->
+        <div class="container__right">
+          <div class="message">
+            <img
+              class="message__img"
+              src="img/sem-mensagens.svg"
+              alt="Mensagens não encontradas"
+            />
+            <div class="message__text">
+              <p class="message__title">Nenhuma mensagem encontrada</p>
+              <p class="message__description">
+                Digite um texto que você deseja criptografar ou descriptografar
+              </p>
+            </div>
+          </div>
+          <div class="message-result invisible">
+            <textarea
+              id="message-output"
+              class="message-field message-output"
+              readonly
+            ></textarea>
+            <button
+              class="btn btn-copy"
+              type="button"
+              title="Copiar texto para área de transferência"
+            >
+              Copiar
+            </button>
+          </div>
+        </div>
+      </div>
     </main>
 
     <script type="module" src="js/main.js"></script>
-</body>
+  </body>
 </html>
