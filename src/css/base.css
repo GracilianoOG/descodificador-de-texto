@@ -27,6 +27,7 @@
   --copy-btn-bg-col: #fff;
   --copy-btn-col: #0a3871;
   --copy-btn-hover-col: #d8dfe8;
+  --copy-btn-copied-col: #008000;
 }
 
 * {
@@ -66,4 +67,5 @@ body {
   --copy-btn-bg-col: #171725;
   --copy-btn-col: #fff;
   --copy-btn-hover-col: #12121e;
+  --copy-btn-copied-col: #1abe1a;
 }
