@@ -11,7 +11,10 @@ export function changeTheme() {
 }
 
 function checkTheme() {
-  return localStorage.getItem("theme") ?? LIGHT;
+  const storedTheme = localStorage.getItem("theme");
+  if (storedTheme) return storedTheme;
+  const isDark = matchMedia("(prefers-color-scheme: dark)").matches;
+  return isDark ? DARK : LIGHT;
 }
 
 root.setAttribute("data-theme", checkTheme());
