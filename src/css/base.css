@@ -3,6 +3,7 @@
   --input-placeholder-col: rgba(10, 56, 113, 0.5);
   --logo-filter: none;
   --switcher-filter: none;
+  --focus-col: #0a3871;
 
   --output-bg-col: #fff;
   --output-box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
@@ -39,6 +40,12 @@ body {
   background-color: var(--body-bg-col);
 }
 
+textarea:focus-visible,
+button:focus-visible {
+  animation: focus 0.25s forwards;
+  outline: 2px solid var(--focus-col);
+}
+
 [data-theme="dark"] {
   --body-bg-col: #0e0e16;
   --input-placeholder-col: rgba(47, 123, 217, 0.5);
@@ -46,6 +53,7 @@ body {
   --msg-warning-col: #a8b7c7;
   --logo-filter: brightness(2);
   --switcher-filter: invert(1);
+  --focus-col: #fff;
 
   --output-col: #fff;
   --output-bg-col: #171725;
