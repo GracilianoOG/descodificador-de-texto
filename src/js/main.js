@@ -1,4 +1,4 @@
-import { encrypt } from "./encrypt.js";
+import { encryptText } from "./encrypt.js";
 import { decrypt } from "./decrypt.js";
 import { auxiliary } from "./auxiliary.js";
 import { changeTheme, getCurrentTheme } from "./theme.js";
@@ -16,7 +16,7 @@ const txtInput = document.querySelector("#message-input");
 const txtOutput = document.querySelector("#message-output");
 
 btnEncrypt.addEventListener("click", () => {
-  encrypt.encryptText(txtInput, txtOutput, encrypt.encryption);
+  encryptText(txtInput, txtOutput);
   const validity = auxiliary.outputMessage(txtInput, {
     message: messageContainer,
     output: txtOutputContainer,
