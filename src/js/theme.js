@@ -5,7 +5,13 @@ const DARK = "dark";
 
 export function changeTheme() {
   const currTheme = root.dataset.theme;
-  root.setAttribute("data-theme", currTheme === LIGHT ? DARK : LIGHT);
+  const nextTheme = currTheme === LIGHT ? DARK : LIGHT;
+  root.setAttribute("data-theme", nextTheme);
+  localStorage.setItem("theme", nextTheme);
 }
 
-root.setAttribute("data-theme", LIGHT);
+function checkTheme() {
+  return localStorage.getItem("theme") ?? LIGHT;
+}
+
+root.setAttribute("data-theme", checkTheme());
