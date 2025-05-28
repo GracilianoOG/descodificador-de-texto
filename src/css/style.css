@@ -12,6 +12,7 @@
 }
 
 .logo {
+  filter: var(--logo-filter);
   width: 1.5rem;
 }
 
