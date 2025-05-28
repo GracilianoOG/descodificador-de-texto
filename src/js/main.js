@@ -17,20 +17,29 @@ const txtOutput = document.querySelector("#message-output");
 
 btnEncrypt.addEventListener("click", () => {
   encrypt.encryptText(txtInput, txtOutput, encrypt.encryption);
-  auxiliary.outputMessage(txtInput, {
+  const validity = auxiliary.outputMessage(txtInput, {
     message: messageContainer,
     output: txtOutputContainer,
-    error: ariaRegion,
   });
+  if (validity) {
+    ariaRegion.textContent = "Criptografia realizada com sucesso!";
+  } else {
+    ariaRegion.textContent = "Nenhuma mensagem encontrada para criptografar!";
+  }
 });
 
 btnDecrypt.addEventListener("click", () => {
   decrypt.decryptText(txtInput, txtOutput, decrypt.decryption);
-  auxiliary.outputMessage(txtInput, {
+  const validity = auxiliary.outputMessage(txtInput, {
     message: messageContainer,
     output: txtOutputContainer,
-    error: ariaRegion,
   });
+  if (validity) {
+    ariaRegion.textContent = "Descriptografia realizada com sucesso!";
+  } else {
+    ariaRegion.textContent =
+      "Nenhuma mensagem encontrada para descriptografar!";
+  }
 });
 
 btnCopy.addEventListener("click", () => {
