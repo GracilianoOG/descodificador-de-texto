@@ -1,7 +1,7 @@
 import { encrypt } from "./encrypt.js";
 import { decrypt } from "./decrypt.js";
 import { auxiliary } from "./auxiliary.js";
-import { changeTheme } from "./theme.js";
+import { changeTheme, getCurrentTheme } from "./theme.js";
 
 const btnEncrypt = document.querySelector(".btn-encrypt");
 const btnDecrypt = document.querySelector(".btn-decrypt");
@@ -35,9 +35,13 @@ btnCopy.addEventListener("click", () => {
   auxiliary.animateButtonState(btnCopy, "Copiado");
 });
 
-switcher.addEventListener("click", changeTheme);
+switcher.addEventListener("click", () => {
+  changeTheme();
+  switcher.setAttribute("aria-checked", getCurrentTheme() === "dark");
+});
 
 (() => {
   txtInput.value = "";
   txtOutput.value = "";
+  switcher.setAttribute("aria-checked", getCurrentTheme() === "dark");
 })();
