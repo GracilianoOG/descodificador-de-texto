@@ -1,5 +1,4 @@
-import { encryptText } from "./encrypt.js";
-import { decryptText } from "./decrypt.js";
+import { encryptText, decryptText } from "./encryption.js";
 import { auxiliary } from "./auxiliary.js";
 import { changeTheme, getCurrentTheme } from "./theme.js";
 
