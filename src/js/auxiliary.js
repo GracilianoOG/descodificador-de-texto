@@ -49,7 +49,7 @@ function outputMessage(input, elements) {
   return false;
 }
 
-export const auxiliary = {
+export {
   formatText,
   copyTextToClipboard,
   hideElement,
