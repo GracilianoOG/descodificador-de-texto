@@ -52,8 +52,6 @@ switcher.addEventListener("click", () => {
   switcher.setAttribute("aria-checked", getCurrentTheme() === "dark");
 });
 
-(() => {
-  txtInput.value = "";
-  txtOutput.value = "";
-  switcher.setAttribute("aria-checked", getCurrentTheme() === "dark");
-})();
+txtInput.value = "";
+txtOutput.value = "";
+switcher.setAttribute("aria-checked", getCurrentTheme() === "dark");
