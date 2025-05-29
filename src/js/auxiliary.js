@@ -36,24 +36,10 @@ function animateButtonState(button, oldText, newText) {
   }, 1200);
 }
 
-function outputMessage(input, elements) {
-  const { message, output } = elements;
-
-  if (input.value.length) {
-    hideElement(message);
-    showElement(output);
-    return true;
-  }
-  showElement(message);
-  hideElement(output);
-  return false;
-}
-
 export {
   formatText,
   copyTextToClipboard,
   hideElement,
   showElement,
   animateButtonState,
-  outputMessage,
 };
