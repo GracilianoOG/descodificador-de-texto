@@ -15,27 +15,27 @@ const txtInput = document.querySelector("#message-input");
 const txtOutput = document.querySelector("#message-output");
 
 btnEncrypt.addEventListener("click", () => {
-  encryptText(txtInput, txtOutput);
-  const validity = utils.outputMessage(txtInput, {
-    message: messageContainer,
-    output: txtOutputContainer,
-  });
-  if (validity) {
+  try {
+    encryptText(txtInput, txtOutput);
+    utils.showElement(txtOutputContainer);
+    utils.hideElement(messageContainer);
     ariaRegion.textContent = "Criptografia realizada com sucesso!";
-  } else {
+  } catch {
+    utils.showElement(messageContainer);
+    utils.hideElement(txtOutputContainer);
     ariaRegion.textContent = "Nenhuma mensagem encontrada para criptografar!";
   }
 });
 
 btnDecrypt.addEventListener("click", () => {
-  decryptText(txtInput, txtOutput);
-  const validity = utils.outputMessage(txtInput, {
-    message: messageContainer,
-    output: txtOutputContainer,
-  });
-  if (validity) {
+  try {
+    decryptText(txtInput, txtOutput);
+    utils.showElement(txtOutputContainer);
+    utils.hideElement(messageContainer);
     ariaRegion.textContent = "Descriptografia realizada com sucesso!";
-  } else {
+  } catch {
+    utils.showElement(messageContainer);
+    utils.hideElement(txtOutputContainer);
     ariaRegion.textContent =
       "Nenhuma mensagem encontrada para descriptografar!";
   }
