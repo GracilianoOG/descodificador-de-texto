@@ -1,34 +1,87 @@
 :root {
-  --body-bg-col: #f3f5fc;
-  --input-placeholder-col: rgba(10, 56, 113, 0.5);
+  /* Base colors */
+  --white: #fff;
+  --gray: #495057;
+  --blue: #3690ff;
+  --dark-gray: #343a40;
+  --light-blue: #d8dfe8;
+  --dark-blue: #0a3871;
+  --very-dark-blue: #072b61;
+  --very-light-blue: #f3f5fc;
+  --transparent-dark-blue: rgba(10, 56, 113, 0.5);
+  --transparent-light-blue: rgba(47, 123, 217, 0.5);
+  --transparent-black: rgba(0, 0, 0, 0.08);
+  --green: #008000;
+
+  /* Dark colors */
+  --light-green: #1abe1a;
+  --blackish-blue: #0e0e16;
+  --dark-grayish-blue: #171725;
+  --grayish-blue: #29293e;
+
+  /* Component colors */
+  --body-bg-col: var(--very-light-blue);
+  --input-placeholder-col: var(--transparent-dark-blue);
   --logo-filter: none;
   --switcher-filter: none;
-  --focus-col: #0a3871;
+  --focus-col: var(--dark-blue);
 
-  --output-bg-col: #fff;
-  --output-box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
-  --output--title-col: #343a40;
-  --output--desc-col: #495057;
-  --output-col: #495057;
+  --output-bg-col: var(--white);
+  --output-box-shadow: 0px 24px 32px -8px var(--transparent-black);
+  --output--title-col: var(--dark-gray);
+  --output--desc-col: var(--gray);
+  --output-col: var(--gray);
 
-  --input-col: #0a3871;
-  --msg-warning-col: #495057;
+  --input-col: var(--dark-blue);
+  --msg-warning-col: var(--gray);
 
-  --encripy-btn-border-col: #0a3871;
-  --encripy-btn-bg-col: #0a3871;
-  --encripy-btn-col: #fff;
-  --encripy-btn-hover-col: #072b61;
+  --encripy-btn-border-col: var(--dark-blue);
+  --encripy-btn-bg-col: var(--dark-blue);
+  --encripy-btn-col: var(--white);
+  --encripy-btn-hover-col: var(--very-dark-blue);
 
-  --decrypt-btn-border-col: #0a3871;
-  --decrypt-btn-bg-col: #d8dfe8;
-  --decrypt-btn-col: #0a3871;
-  --decrypt-btn-hover-col: #fff;
+  --decrypt-btn-border-col: var(--dark-blue);
+  --decrypt-btn-bg-col: var(--light-blue);
+  --decrypt-btn-col: var(--dark-blue);
+  --decrypt-btn-hover-col: var(--white);
 
-  --copy-btn-border-col: #0a3871;
-  --copy-btn-bg-col: #fff;
-  --copy-btn-col: #0a3871;
-  --copy-btn-hover-col: #d8dfe8;
-  --copy-btn-copied-col: #008000;
+  --copy-btn-border-col: var(--dark-blue);
+  --copy-btn-bg-col: var(--white);
+  --copy-btn-col: var(--dark-blue);
+  --copy-btn-hover-col: var(--light-blue);
+  --copy-btn-copied-col: var(--green);
+}
+
+[data-theme="dark"] {
+  --body-bg-col: var(--blackish-blue);
+  --input-placeholder-col: var(--transparent-light-blue);
+  --input-col: var(--blue);
+  --msg-warning-col: var(--light-blue);
+  --logo-filter: brightness(2);
+  --switcher-filter: invert(1);
+  --focus-col: var(--white);
+
+  --output-col: var(--white);
+  --output-bg-col: var(--dark-grayish-blue);
+  --output-box-shadow: 0 0 2px var(--white);
+  --output--title-col: var(--very-light-blue);
+  --output--desc-col: var(--light-blue);
+
+  --encripy-btn-border-col: var(--white);
+  --encripy-btn-bg-col: var(--white);
+  --encripy-btn-col: var(--dark-blue);
+  --encripy-btn-hover-col: var(--light-blue);
+
+  --decrypt-btn-border-col: var(--white);
+  --decrypt-btn-bg-col: var(--dark-grayish-blue);
+  --decrypt-btn-col: var(--white);
+  --decrypt-btn-hover-col: var(--grayish-blue);
+
+  --copy-btn-border-col: var(--white);
+  --copy-btn-bg-col: var(--dark-grayish-blue);
+  --copy-btn-col: var(--white);
+  --copy-btn-hover-col: var(--grayish-blue);
+  --copy-btn-copied-col: var(--light-green);
 }
 
 * {
@@ -44,36 +97,4 @@ textarea:focus-visible,
 button:focus-visible {
   animation: focus 0.25s forwards;
   outline: 2px solid var(--focus-col);
-}
-
-[data-theme="dark"] {
-  --body-bg-col: #0e0e16;
-  --input-placeholder-col: rgba(47, 123, 217, 0.5);
-  --input-col: #3690ff;
-  --msg-warning-col: #a8b7c7;
-  --logo-filter: brightness(2);
-  --switcher-filter: invert(1);
-  --focus-col: #fff;
-
-  --output-col: #fff;
-  --output-bg-col: #171725;
-  --output-box-shadow: 0 0 2px #fff;
-  --output--title-col: #dbedff;
-  --output--desc-col: #aabcce;
-
-  --encripy-btn-border-col: #fff;
-  --encripy-btn-bg-col: #fff;
-  --encripy-btn-col: #0a3871;
-  --encripy-btn-hover-col: #d8dfe8;
-
-  --decrypt-btn-border-col: #fff;
-  --decrypt-btn-bg-col: #171725;
-  --decrypt-btn-col: #fff;
-  --decrypt-btn-hover-col: #29293e;
-
-  --copy-btn-border-col: #fff;
-  --copy-btn-bg-col: #171725;
-  --copy-btn-col: #fff;
-  --copy-btn-hover-col: #12121e;
-  --copy-btn-copied-col: #1abe1a;
 }
