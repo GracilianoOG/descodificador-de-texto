@@ -1,4 +1,4 @@
-import { auxiliary } from "./auxiliary.js";
+import { formatText } from "./auxiliary.js";
 
 export const ENCRYPTION = Object.freeze([
   ["e", "enter"],
@@ -17,7 +17,7 @@ export const DECRYPTION = Object.freeze([
 ]);
 
 function applyAlgorithm(input, output, algorithm) {
-  let text = auxiliary.formatText(input.value);
+  let text = formatText(input.value);
 
   if (!text.length) return;
 
