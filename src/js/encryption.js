@@ -19,7 +19,9 @@ export const DECRYPTION = Object.freeze([
 function applyAlgorithm(input, output, algorithm) {
   let text = formatText(input.value);
 
-  if (!text.length) return;
+  if (!text.length) {
+    throw new Error("O campo deve conter pelo menos um ou mais caracteres!");
+  }
 
   for (let code of algorithm) {
     text = text.replaceAll(code[0], code[1]);
