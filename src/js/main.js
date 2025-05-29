@@ -1,5 +1,5 @@
 import { encryptText, decryptText } from "./encryption.js";
-import { auxiliary } from "./auxiliary.js";
+import * as utils from "./auxiliary.js";
 import { changeTheme, getCurrentTheme } from "./theme.js";
 
 const btnEncrypt = document.querySelector(".btn-encrypt");
@@ -16,7 +16,7 @@ const txtOutput = document.querySelector("#message-output");
 
 btnEncrypt.addEventListener("click", () => {
   encryptText(txtInput, txtOutput);
-  const validity = auxiliary.outputMessage(txtInput, {
+  const validity = utils.outputMessage(txtInput, {
     message: messageContainer,
     output: txtOutputContainer,
   });
@@ -29,7 +29,7 @@ btnEncrypt.addEventListener("click", () => {
 
 btnDecrypt.addEventListener("click", () => {
   decryptText(txtInput, txtOutput);
-  const validity = auxiliary.outputMessage(txtInput, {
+  const validity = utils.outputMessage(txtInput, {
     message: messageContainer,
     output: txtOutputContainer,
   });
@@ -42,8 +42,8 @@ btnDecrypt.addEventListener("click", () => {
 });
 
 btnCopy.addEventListener("click", () => {
-  auxiliary.copyTextToClipboard(txtOutput.value);
-  auxiliary.animateButtonState(btnCopy, "Copiar", "Copiado");
+  utils.copyTextToClipboard(txtOutput.value);
+  utils.animateButtonState(btnCopy, "Copiar", "Copiado");
   ariaRegion.textContent = "Texto copiado com sucesso!";
 });
 
